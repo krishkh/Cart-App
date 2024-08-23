@@ -16,7 +16,7 @@ interface ExploreProps {
 // Assuming initData is correctly typed as ItemData[]
 const typedData: ItemData[] = initData;
 
-const Explore: React.FC<ExploreProps> = ({ data = typedData }) => {
+const Explore: React.FC<{ data: ItemData[] }> = ({ data }) => {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between md:p-24">
       <div className="dark:text-gray-400 mt-8 flex-wrap dark:bg-blackaf body-font flex container px-5 py-5 mx-auto">
@@ -26,6 +26,7 @@ const Explore: React.FC<ExploreProps> = ({ data = typedData }) => {
       </div>
     </main>
   );
-}
+};
+
 
 export default Explore;
