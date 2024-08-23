@@ -11,9 +11,11 @@ interface ItemData {
 
 interface ExploreProps {
   data: ItemData[];
-}
+};
 
-const Explore: React.FC<ExploreProps> = ({ data = initData }) => {
+const typedData: ItemData[] = initData; 
+
+const Explore: React.FC<ExploreProps> = ({ data = typedData }) => {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between md:p-24">
       <div className="dark:text-gray-400 mt-8 flex-wrap dark:bg-blackaf body-font flex container px-5 py-5 mx-auto">
