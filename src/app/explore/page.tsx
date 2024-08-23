@@ -14,7 +14,6 @@ interface ExploreProps {
 }
 
 export default function Explore({ data = initData }: ExploreProps) {
-  console.dir(data)
   return (
     <main className="flex min-h-screen flex-col items-center justify-between md:p-24">
       <div className="dark:text-gray-400 mt-8 flex-wrap dark:bg-blackaf body-font flex container px-5 py-5 mx-auto">
