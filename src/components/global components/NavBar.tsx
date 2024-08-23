@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { Search } from "../Search";
+import { Search } from "./Search";
 import Logo from "./logo";
 const navLinks = [
   { path: "/explore", name: "Buy" },

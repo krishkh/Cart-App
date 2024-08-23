@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import SignIn from "./signIn";
-import SignUp from "./signUp";
+import SignIn from "../signIn";
+import SignUp from "../signUp";
 
 function Modal({ children, isOpen, onClose }) {
   if (!isOpen) return null; // Don't render if not open

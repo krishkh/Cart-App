@@ -1,4 +1,4 @@
-import ItemCard from "../../components/itemCard";
+import ItemCard from "../../components/Item related components/itemCard";
 import initData from "../../../public/init/initData.json"
 
 interface ItemData {
