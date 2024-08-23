@@ -1,0 +1,72 @@
+[
+  {
+    "itemName": "T-Shirt",
+    "itemNumber": 1,
+    "itemPrice": 19.99,
+    "category": "Clothing",
+    "description": "A comfortable and stylish T-shirt for everyday wear."
+  },
+  {
+    "itemName": "Jeans",
+    "itemNumber": 2,
+    "itemPrice": 34.5,
+    "category": "Clothing",
+    "description": "Durable and fashionable jeans for any occasion."
+  },
+  {
+    "itemName": "Sweatshirt",
+    "itemNumber": 3,
+    "itemPrice": 27.99,
+    "category": "Clothing",
+    "description": "A cozy and warm sweatshirt for cooler weather."
+  },
+  {
+    "itemName": "Hat",
+    "itemNumber": 4,
+    "itemPrice": 27.99,
+    "category": "Accessories",
+    "description": "A stylish hat to complete your look."
+  },
+  {
+    "itemName": "Backpack",
+    "itemNumber": 5,
+    "itemPrice": 49.95,
+    "category": "Accessories",
+    "description": "A spacious and functional backpack for everyday use."
+  },
+  {
+    "itemName": "Sneakers",
+    "itemNumber": 6,
+    "itemPrice": 62.99,
+    "category": "Shoes",
+    "description": "Comfortable and stylish sneakers for all-day wear."
+  },
+  {
+    "itemName": "Sunglasses",
+    "itemNumber": 7,
+    "itemPrice": 24.99,
+    "category": "Accessories",
+    "description": "Protect your eyes in style with these sunglasses."
+  },
+  {
+    "itemName": "Watch",
+    "itemNumber": 8,
+    "itemPrice": 79.95,
+    "category": "Accessories",
+    "description": "A stylish and functional watch to complement your outfit."
+  },
+  {
+    "itemName": "Wallet",
+    "itemNumber": 9,
+    "itemPrice": 32.5,
+    "category": "Accessories",
+    "description": "A practical and stylish wallet to keep your essentials organized."
+  },
+  {
+    "itemName": "Phone Case",
+    "itemNumber": 10,
+    "itemPrice": 12.99,
+    "category": "Accessories",
+    "description": "Protect your phone in style with this phone case."
+  }
+]
