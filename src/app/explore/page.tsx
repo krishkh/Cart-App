@@ -1,47 +1,29 @@
-import React from 'react';
+import ItemCard from "../../components/Item related components/itemCard";
+import initData from "../../../public/init/initData.json"
 
-interface Item {
-  itemName: string;
+interface ItemData {
   itemNumber: number;
+  itemName: string;
   itemPrice: number;
   category: string;
   description: string;
 }
 
-interface ItemListProps {
-  items: Item[];
-}
-
-const itemsList: Item[] = [
-  {
-    itemName: "T-Shirt",
-    itemNumber: 1,
-    itemPrice: 19.99,
-    category: "Clothing",
-    description: "A comfortable and stylish T-shirt for everyday wear."
-  },
-  {
-    itemName: "Jeans",
-    itemNumber: 2,
-    itemPrice: 34.5,
-    category: "Clothing",
-    description: "Durable and fashionable jeans for any occasion."
-  }
-];
-
-const ItemList: React.FC<ItemListProps> = ({ items = itemsList }) => {
-  return (
-    <div>
-      {items.map(item => (
-        <div key={item.itemNumber} className='m-40 border'>
-          <h2>{item.itemName}</h2>
-          <p><strong>Price:</strong> ${item.itemPrice.toFixed(2)}</p>
-          <p><strong>Category:</strong> {item.category}</p>
-          <p><strong>Description:</strong> {item.description}</p>
-        </div>
-      ))}
-    </div>
-  );
+interface ExploreProps {
+  data: ItemData[];
 };
 
-export default ItemList;
+const typedData: ItemData[] = initData; 
+
+const Explore: React.FC<ExploreProps> = ( {data = typedData} ) => {
+  return (
+    <main className="flex min-h-screen flex-col items-center justify-between md:p-24">
+      <div className="dark:text-gray-400 mt-8 flex-wrap dark:bg-blackaf body-font flex container px-5 py-5 mx-auto">
+        {data.map((item,index) => (
+          <ItemCard key={index} data={item} />
+        ))}
+      </div>
+    </main>
+  );
+}
+export default Explore

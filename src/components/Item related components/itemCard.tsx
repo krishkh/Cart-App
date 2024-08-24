@@ -19,11 +19,10 @@ function ItemCard({ data }: Data) {
   // console.log(data);
   return (
     <Link
-      href={`/cart/item?itemNumber=0`}
+      href={`/cart/item?itemNumber=${data.itemNumber}`}
       className="lg:w-1/3 md:w-1/2 p-8 w-full card-shadow"
     >
-      hello
-      {/* <div className="block relative h-48 rounded overflow-hidden ">
+      <div className="block relative h-48 rounded overflow-hidden ">
         <img
           alt="ecommerce"
           className="object-cover object-center w-full h-full block"
@@ -38,7 +37,7 @@ function ItemCard({ data }: Data) {
           {data.itemName}
         </h2>
         <p className="mt-1 dark:text-gray-100">{data.itemPrice}</p>
-      </div> */}
+      </div>
     </Link>
   );
 }
