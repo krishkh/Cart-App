@@ -1,6 +1,8 @@
+import React from "react";
 import ItemCard from "../../components/Item related components/itemCard";
 import initData from "../../../public/init/initData.json";
 
+// Define the TypeScript interface for the items
 interface ItemData {
   itemNumber: number;
   itemName: string;
@@ -10,11 +12,10 @@ interface ItemData {
 }
 
 interface ExploreProps {
-  data?: ItemData[];  // Make data optional since you are providing a default value
+  data?: ItemData[];  // `data` is optional because you provide a default value
 }
 
-// Assuming initData is correctly typed as ItemData[]
-const typedData: ItemData[] = initData;
+const typedData: ItemData[] = initData as ItemData[];
 
 const Explore: React.FC<ExploreProps> = ({ data = typedData }) => {
   return (
@@ -27,6 +28,5 @@ const Explore: React.FC<ExploreProps> = ({ data = typedData }) => {
     </main>
   );
 }
-
 
 export default Explore;
