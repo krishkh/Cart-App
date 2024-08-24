@@ -19,7 +19,7 @@ function ItemCard({ data }: Data) {
   // console.log(data);
   return (
     <Link
-      href={`/cart/item?itemNumber=${data.itemNumber}`}
+      href={`/cart/item?itemNumber=0`}
       className="lg:w-1/3 md:w-1/2 p-8 w-full card-shadow"
     >
       hello
