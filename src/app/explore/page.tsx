@@ -4,8 +4,8 @@ import initData from "../../../public/init/initData.json";
 
 // Define the TypeScript interface for the items
 interface ItemData {
-  itemNumber: number;
   itemName: string;
+  itemNumber: number;
   itemPrice: number;
   category: string;
   description: string;
@@ -15,7 +15,8 @@ interface ExploreProps {
   data?: ItemData[];  // `data` is optional because you provide a default value
 }
 
-const typedData: ItemData[] = initData as ItemData[];
+// Assuming initData is correctly typed as ItemData[]
+const typedData: ItemData[] = initData;
 
 const Explore: React.FC<ExploreProps> = ({ data = typedData }) => {
   return (
